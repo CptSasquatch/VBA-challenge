@@ -64,7 +64,7 @@ For Each ws In Worksheets
             ws.Range("J" & tickerRow).Value = closing - opening
             
             'add percent change
-            ws.Range("K" & tickerRow).Value = 100 * ((closing - opening) / opening)
+            ws.Range("K" & tickerRow).Value = 1 * ((closing - opening) / opening)
             
             'add 1 to row
             tickerRow = tickerRow + 1
